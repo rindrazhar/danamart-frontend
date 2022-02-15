@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Sarala", sans-serif;
+}
+
 .header .navbar {
   padding-top: 0;
 }
@@ -66,7 +74,7 @@
 }
 
 main .hero {
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 main .hero .wrapper h1 {
@@ -138,11 +146,60 @@ main .hero .image-wrapper img {
 
 main .investasi {
   background: #f6f6f680;
-  min-height: 70vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .investasi .wrapper {
-  padding-top: 5rem;
+main .investasi .wrapper-card {
+  padding-top: 3rem;
+}
+
+main .investasi .wrapper-card .card {
+  background: #ffffff;
+  width: 266px;
+  height: 299px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  padding-top: 3rem;
+  border: none;
+}
+
+main .investasi .wrapper-card .card .inner {
+  background: rgba(4, 182, 154, 0.7);
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1rem;
+}
+
+main .investasi .wrapper-card .card .card-image {
+  width: 93px;
+  height: 93px;
+}
+
+main .investasi .wrapper-card .card .card-body .card-title {
+  font-size: 0.5rem;
+  color: #04b69a;
 }
 
 main .investasi .wrapper h1 {
@@ -152,5 +209,88 @@ main .investasi .wrapper h1 {
   font-size: 2.5rem;
   text-align: center;
   color: #333333;
+}
+
+.bg-line {
+  background: #00ad92;
+  height: 62px;
+  width: auto;
+}
+
+footer {
+  background: #04b69a;
+  font-family: "Sarala", sans-serif;
+}
+
+footer .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .content-wrapper .content {
+  margin: 5px;
+  color: white;
+}
+
+footer .content-wrapper .content .card-body {
+  width: 296px;
+  height: 214px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00ad92;
+}
+
+footer .content-wrapper .content .content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+footer .content-wrapper .content .content-subtitle {
+  line-height: 2rem;
+}
+
+footer .content-wrapper .content .content-img img {
+  width: 422.91px;
+  height: auto;
+  margin-top: 0;
+}
+
+footer .social-media {
+  background: #00ad92;
+  height: 70px;
+  width: auto;
+  bottom: 0px;
+  padding: 15px 7px 0px 17px;
+}
+
+footer .social-media .content-left {
+  float: left;
+  color: #ffffff;
+  padding-top: 5px;
+}
+
+footer .social-media .content-right {
+  float: right;
+}
+
+footer .social-media .content-right .inner {
+  background: #ffffff;
+  border-radius: 50%;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+footer .social-media .content-right ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */

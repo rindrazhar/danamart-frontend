@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sarala", sans-serif;
+}
+
 .header {
   .navbar {
     padding-top: 0;
@@ -60,7 +67,7 @@
 
 main {
   .hero {
-    min-height: 70vh;
+    min-height: 80vh;
 
     .wrapper {
       h1 {
@@ -130,11 +137,49 @@ main {
 
   .investasi {
     background: #f6f6f680;
-    min-height: 70vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper-card {
+      padding-top: 3rem;
+
+      .card {
+        background: #ffffff;
+        width: 266px;
+        height: 299px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        padding-top: 3rem;
+        border: none;
+
+        .inner {
+          background: rgba(4, 182, 154, 0.7);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.15);
+          border-radius: 20px;
+          font-size: 25px;
+          text-align: center;
+          border-radius: 50%;
+          display: inline-block;
+          padding: 1rem;
+        }
+
+        .card-image {
+          width: 93px;
+          height: 93px;
+        }
+
+        .card-body .card-title {
+          font-size: 0.5rem;
+          color: #04b69a;
+        }
+      }
+    }
 
     .wrapper {
-      padding-top: 5rem;
-
       h1 {
         font-family: "Sarala", sans-serif;
         font-style: normal;
@@ -142,6 +187,84 @@ main {
         font-size: 2.5rem;
         text-align: center;
         color: #333333;
+      }
+    }
+  }
+}
+
+.bg-line {
+  background: #00ad92;
+  height: 62px;
+  width: auto;
+}
+
+footer {
+  background: #04b69a;
+  font-family: "Sarala", sans-serif;
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .content {
+      margin: 5px;
+      color: white;
+
+      .card-body {
+        width: 296px;
+        height: 214px;
+        border-radius: 10px;
+        border: none;
+        background-color: #00ad92;
+      }
+
+      .content-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+      }
+
+      .content-subtitle {
+        line-height: 2rem;
+      }
+
+      .content-img img {
+        width: 422.91px;
+        height: auto;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .social-media {
+    background: #00ad92;
+    height: 70px;
+    width: auto;
+    bottom: 0px;
+    padding: 15px 7px 0px 17px;
+
+    .content-left {
+      float: left;
+      color: #ffffff;
+      padding-top: 5px;
+    }
+
+    .content-right {
+      float: right;
+
+      .inner {
+        background: #ffffff;
+        border-radius: 50%;
+        border-radius: 20px;
+        text-align: center;
+        display: inline-block;
+        padding: 0.3rem;
+      }
+
+      ul {
+        list-style-type: none;
       }
     }
   }
