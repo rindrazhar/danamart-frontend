@@ -3,11 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Sarala", sans-serif;
+  width: auto;
+}
+
+*:focus {
+  outline: none !important;
 }
 
 .header {
   .navbar {
     padding-top: 0;
+
+    .navbar-toggler {
+      color: #04b69a !important;
+      border-color: #04b69a !important;
+    }
   }
 
   .wrap-navbar ul li a:hover {
@@ -48,6 +58,14 @@
     justify-content: center;
     margin-left: 1rem;
     margin-right: 1rem;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      display: none;
+    }
   }
 
   .login {
@@ -132,6 +150,14 @@ main {
         width: 536.18px;
         height: 427.69px;
       }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        display: none;
+      }
     }
   }
 
@@ -145,9 +171,56 @@ main {
     .wrapper-card {
       padding-top: 3rem;
 
+      .owl-carousel .owl-nav {
+        overflow: hidden;
+        height: 0px;
+      }
+
+      .owl-theme .owl-dots .owl-dot.active span,
+      .owl-theme .owl-dots .owl-dot:hover span {
+        background: #04b69a;
+      }
+
+      .owl-carousel .item {
+        text-align: center;
+      }
+      .owl-carousel .nav-btn {
+        height: 47px;
+        position: absolute;
+        width: 26px;
+        cursor: pointer;
+        top: 140px !important;
+      }
+
+      .owl-carousel .owl-prev.disabled,
+      .owl-carousel .owl-next.disabled {
+        pointer-events: none;
+        opacity: 0.2;
+      }
+
+      .owl-carousel .prev-slide {
+        background: url(../assets/Arrow_left.svg) no-repeat scroll 0 0;
+        left: -33px;
+        color: #04b69a !important;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      .owl-carousel .next-slide {
+        background: url(../assets/Arrow_right.svg) no-repeat scroll 0 0;
+        right: -33px;
+        color: #04b69a !important;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
       .card {
         background: #ffffff;
-        width: 266px;
+        width: auto;
         height: 299px;
         display: flex;
         align-items: center;
@@ -155,6 +228,13 @@ main {
         border-radius: 40px;
         padding-top: 3rem;
         border: none;
+        margin: 1rem;
+
+        @media screen and (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
         .inner {
           background: rgba(4, 182, 154, 0.7);
@@ -207,12 +287,16 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      padding-bottom: 2rem;
+    }
+
     .content {
       margin: 5px;
       color: white;
 
       .card-body {
-        width: 296px;
+        width: auto;
         height: 214px;
         border-radius: 10px;
         border: none;
@@ -224,6 +308,10 @@ footer {
         font-weight: bold;
         font-size: 1.25rem;
         padding-bottom: 1rem;
+
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
       }
 
       .content-subtitle {
@@ -234,25 +322,50 @@ footer {
         width: 422.91px;
         height: auto;
         margin-top: 0;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          display: none;
+        }
       }
     }
   }
 
   .social-media {
     background: #00ad92;
+    bottom: 0;
+    width: 100%;
     height: 70px;
-    width: auto;
-    bottom: 0px;
     padding: 15px 7px 0px 17px;
+
+    @media screen and (max-width: 767px) {
+      height: auto;
+    }
 
     .content-left {
       float: left;
       color: #ffffff;
       padding-top: 5px;
+
+      @media screen and (max-width: 767px) {
+        float: none;
+        text-align: center;
+      }
     }
 
     .content-right {
       float: right;
+
+      @media screen and (max-width: 767px) {
+        float: none;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
       .inner {
         background: #ffffff;
@@ -263,8 +376,9 @@ footer {
         padding: 0.3rem;
       }
 
-      ul {
-        list-style-type: none;
+      ul li {
+        list-style: none;
+        display: inline-block;
       }
     }
   }

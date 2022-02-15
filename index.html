@@ -59,7 +59,7 @@
             ><img src="./assets/Irma_01.png" alt=""
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarTogglerDemo01"
@@ -106,7 +106,7 @@
       <section class="hero">
         <div class="container">
           <div class="row">
-            <div class="wrapper col-sm-12 col-md-6 col-lg-6">
+            <div class="wrapper col-xs-12 col-sm-12 col-md-12 col-lg-6">
               <h1>
                 Seratus Juta Pertama di Umur Muda,
                 <h1 class="color-blue">di Sini Tempatnya</h1>
@@ -121,7 +121,7 @@
               <span class="hashtag">#OtwJadiSultan</span>
               <a class="btn-hero">Hubungi Kami</a>
             </div>
-            <div class="image-wrapper col-sm-12 col-md-6 col-lg-6">
+            <div class="image-wrapper col-xs-12 col-sm-12 col-md-12 col-lg-6">
               <img src="./assets/Asset1.png" alt="" />
             </div>
           </div>
@@ -203,7 +203,7 @@
         </div>
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
               <div class="content">
                 <div class="content-title">
                   <span>PT. Dana Aguna Nusantara</span>
@@ -220,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
               <div class="content">
                 <div class="content-title">
                   <span>Jam Operasional</span>
@@ -237,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-12 col-lg-4">
               <div class="content">
                 <div class="content-img">
                   <img src="./assets/F.Asset.png" alt="" />
@@ -254,28 +254,28 @@
           </div>
           <div class="content-right">
             <ul class="row">
-              <li class="col-md-3 col-sm-3">
+              <li class="col-md-3 col-sm-3 col-xs-3">
                 <a href="">
                   <div class="inner">
                     <img src="./assets/instagram.svg" alt="" />
                   </div>
                 </a>
               </li>
-              <li class="col-md-3 col-sm-3">
+              <li class="col-md-3 col-sm-3 col-xs-3">
                 <a href="">
                   <div class="inner">
                     <img src="./assets/facebook.svg" alt="" />
                   </div>
                 </a>
               </li>
-              <li class="col-md-3 col-sm-3">
+              <li class="col-md-3 col-sm-3 col-xs-3">
                 <a href="">
                   <div class="inner">
                     <img src="./assets/youtube.svg" alt="" />
                   </div>
                 </a>
               </li>
-              <li class="col-md-3 col-sm-3">
+              <li class="col-md-3 col-sm-3 col-xs-3">
                 <a href="">
                   <img src="./assets/linkedin.svg" alt="" />
                 </a>
@@ -323,15 +323,19 @@
       $(".owl-carousel").owlCarousel({
         loop: true,
         nav: true,
+        navText: [
+          "<div class='nav-btn prev-slide'></div>",
+          "<div class='nav-btn next-slide'></div>",
+        ],
         responsive: {
           0: {
             items: 1,
           },
           600: {
-            items: 2,
+            items: 1,
           },
           1000: {
-            items: 4,
+            items: 3,
           },
         },
       });
